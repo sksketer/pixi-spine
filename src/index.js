@@ -1,18 +1,14 @@
-import * as PIXI from 'pixi.js';
+import { Application, BaseTexture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
 import { TextureAtlas } from '@pixi-spine/base';  // FIX: Use TextureAtlas instead of SpineTextureAtlas
 
-
-const oldCanvas = document.querySelector("canvas");
-if (oldCanvas) {
-    oldCanvas.remove();
-}
-const app = new PIXI.Application({
+const app = new Application({
     width: 800,
     height: 600,
     backgroundColor: 0x1099bb
 });
 globalThis.__PIXI_APP__ = app;
+
 document.body.appendChild(app.view);
 resizeCanvas.call(this, app);
 
@@ -24,7 +20,7 @@ app.loader
 
 function onAssetsLoaded(loader, resources) {
     const spineAtlas = new TextureAtlas(resources.spineAtlas.data, (line, callback) => {
-        callback(PIXI.BaseTexture.from(resources.spinePng.url));
+        callback(BaseTexture.from(resources.spinePng.url));
     });
 
     const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
