@@ -1,0 +1,890 @@
+[
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Desktop\\",
+    "fileName": "BGB.jpg"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Desktop\\",
+    "fileName": "BG_Bonus.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Desktop\\",
+    "fileName": "BG_Bonus.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Desktop\\",
+    "fileName": "BG_Bonus.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Portrait\\",
+    "fileName": "BG_Bonus_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Portrait\\",
+    "fileName": "BG_Bonus_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Bonus_Portrait\\",
+    "fileName": "BG_Bonus_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Portrait\\",
+    "fileName": "BG.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Portrait\\",
+    "fileName": "BG.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Portrait\\",
+    "fileName": "BG.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BG_Portrait\\",
+    "fileName": "BG_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusMeterLevelUp\\",
+    "fileName": "Bonus_Meter_Level_Up.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusMeterLevelUp\\",
+    "fileName": "Portrait_Bonus_Meter_Level_Up.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusMeterLevelUp\\",
+    "fileName": "Portrait_Bonus_Meter_Level_Up.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Bonus_Watermark_Landing_VFX.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_2.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_2.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_25.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_25.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_5.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\bonusWaterMarkLandingVFX\\",
+    "fileName": "Portrait_Bonus_Watermark_Landing_VFX_5.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\progressBar\\dm_Bonus_ProgressBars_PT\\",
+    "fileName": "dm_Bonus_ProgressBars.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\progressBar\\dm_Bonus_ProgressBars_PT\\",
+    "fileName": "dm_Bonus_ProgressBars.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\progressBar\\dm_Bonus_ProgressBars_PT\\",
+    "fileName": "dm_Bonus_ProgressBars.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\retrigger\\",
+    "fileName": "Bonus_Retrigger.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\retrigger\\",
+    "fileName": "Portrait_Bonus_Retrigger.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\retrigger\\",
+    "fileName": "Portrait_Bonus_Retrigger.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Bonus_TotalWin_Banner.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Bonus_WinMessage_HM_Yards.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Bonus_WinMessage_Yards.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Bonus_Win_Label.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "dm_Bonus_WinMessage_HM_Yards.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "dm_Bonus_WinMessage_HM_Yards.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "dm_Bonus_WinMessage_HM_Yards.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_TotalWin_Banner.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_TotalWin_Banner.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_TotalWin_Banner.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_HM_Yards.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_HM_Yards.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_Yards.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_Yards.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_Win_Label.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_Win_Label.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X16_Yard80.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X16_Yard80.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X16_Yard80.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X25_YardTD.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X25_YardTD.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X25_YardTD.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X2_Yard20.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X2_Yard20.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X2_Yard20.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X4_Yard40.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X4_Yard40.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X4_Yard40.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X8_Yard60.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X8_Yard60.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\BonusXyard\\",
+    "fileName": "Desktop_Bonus_X8_Yard60.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\",
+    "fileName": "Bonus_ProgressBars.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\",
+    "fileName": "Desktop_Bonus_ProgressBars.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\",
+    "fileName": "Desktop_Bonus_ProgressBars.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\dm_Bonus_ProgressBars\\",
+    "fileName": "dm_Bonus_ProgressBars.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\dm_Bonus_ProgressBars\\",
+    "fileName": "dm_Bonus_ProgressBars.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\progressBar\\dm_Bonus_ProgressBars\\",
+    "fileName": "dm_Bonus_ProgressBars_LS.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Bonus_TotalWin_Banner.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Bonus_WinMessage_HM_Yards.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Bonus_WinMessage_Yards.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Bonus_Win_Label.png"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_TotalWin_Banner.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_TotalWin_Banner.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_HM_Yards.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_HM_Yards.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_Yards.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_WinMessage_Yards.json"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_Win_Label.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\BonusBlitzFeatureSpine_Desktop\\winMsgHmYard\\",
+    "fileName": "Portrait_Bonus_Win_Label.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_Coin_Shower.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_Coin_Shower.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_Coin_Shower.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_JackpotCelebration.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_JackpotCelebration.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Celebration_messages\\",
+    "fileName": "dm_JackpotCelebration.png"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\landscape\\",
+    "fileName": "Pick_Your_Receiver_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\landscape\\",
+    "fileName": "Pick_Your_Receiver_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\landscape\\",
+    "fileName": "Pick_Your_Receiver_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\landscape\\",
+    "fileName": "Pick_Your_Receiver_Desktop_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\portrait\\",
+    "fileName": "Pick_Your_Receiver_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\portrait\\",
+    "fileName": "Pick_Your_Receiver_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\portrait\\",
+    "fileName": "Pick_Your_Receiver_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\featureSpine\\portrait\\",
+    "fileName": "Pick_Your_Receiver_Portrait_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\JackpotMeters\\",
+    "fileName": "JackpotLevelMeters.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\JackpotMeters\\",
+    "fileName": "JackpotLevelMeters.json"
+  },
+  {
+    "filePath": "assets\\Spine\\JackpotMeters\\",
+    "fileName": "JackpotLevelMeters.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_ExtraPoint_Portrait\\",
+    "fileName": "UI_JP_ExtraPoint.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_ExtraPoint_Portrait\\",
+    "fileName": "UI_JP_ExtraPoint_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_ExtraPoint_Portrait\\",
+    "fileName": "UI_JP_ExtraPoint_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_FieldGoal_Portrait\\",
+    "fileName": "UI_JP_FieldGoal.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_FieldGoal_Portrait\\",
+    "fileName": "UI_JP_FieldGoal_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_FieldGoal_Portrait\\",
+    "fileName": "UI_JP_FieldGoal_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_Touchdown_Portrait\\",
+    "fileName": "UI_JP_Touchdown.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_Touchdown_Portrait\\",
+    "fileName": "UI_JP_Touchdown_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins\\UI_JP_Touchdown_Portrait\\",
+    "fileName": "UI_JP_Touchdown_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_ExtraPoint_Desktop\\",
+    "fileName": "UI_JP_ExtraPoint_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_ExtraPoint_Desktop\\",
+    "fileName": "UI_JP_ExtraPoint_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_ExtraPoint_Desktop\\",
+    "fileName": "UI_JP_ExtraPoint_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_FieldGoal_Desktop\\",
+    "fileName": "UI_JP_FieldGoal_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_FieldGoal_Desktop\\",
+    "fileName": "UI_JP_FieldGoal_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_FieldGoal_Desktop\\",
+    "fileName": "UI_JP_FieldGoal_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_Touchdown_Desktop\\",
+    "fileName": "UI_JP_Touchdown_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_Touchdown_Desktop\\",
+    "fileName": "UI_JP_Touchdown_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Jackpot_Wins_Desktop\\UI_JP_Touchdown_Desktop\\",
+    "fileName": "UI_JP_Touchdown_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Bonus_Scatter_Portrait\\",
+    "fileName": "Symbol_Bonus_Scatter_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Bonus_Scatter_Portrait\\",
+    "fileName": "Symbol_Bonus_Scatter_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Bonus_Scatter_Portrait\\",
+    "fileName": "Symbol_Bonus_Scatter_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Jackpot_Scatter_Portrait\\",
+    "fileName": "Symbol_Jackpot_Scatter.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Jackpot_Scatter_Portrait\\",
+    "fileName": "Symbol_Jackpot_Scatter_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Jackpot_Scatter_Portrait\\",
+    "fileName": "Symbol_Jackpot_Scatter_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_BG_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_BG.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_BG_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_BG_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_BG_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_BG_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_LARGE_QB_Portrait\\",
+    "fileName": "Symbol_LARGE_QB_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_1_Portrait\\",
+    "fileName": "Symbol_Major_1_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_1_Portrait\\",
+    "fileName": "Symbol_Major_1_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_1_Portrait\\",
+    "fileName": "Symbol_Major_1_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_2_Portrait\\",
+    "fileName": "Symbol_Major_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_2_Portrait\\",
+    "fileName": "Symbol_Major_2_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_2_Portrait\\",
+    "fileName": "Symbol_Major_2_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_3_Portrait\\",
+    "fileName": "Symbol_Major_3.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_3_Portrait\\",
+    "fileName": "Symbol_Major_3_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Major_3_Portrait\\",
+    "fileName": "Symbol_Major_3_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_1_Portrait\\",
+    "fileName": "Symbol_Mid_1.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_1_Portrait\\",
+    "fileName": "Symbol_Mid_1_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_1_Portrait\\",
+    "fileName": "Symbol_Mid_1_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_2_Portrait\\",
+    "fileName": "Symbol_Mid_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_2_Portrait\\",
+    "fileName": "Symbol_Mid_2_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Mid_2_Portrait\\",
+    "fileName": "Symbol_Mid_2_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_RegularWild_Portrait\\",
+    "fileName": "Symbol_RegularWild.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_RegularWild_Portrait\\",
+    "fileName": "Symbol_RegularWild_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_RegularWild_Portrait\\",
+    "fileName": "Symbol_RegularWild_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_10\\",
+    "fileName": "symbol_royal_10.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_10\\",
+    "fileName": "symbol_royal_10.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_10\\",
+    "fileName": "symbol_royal_10.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_A\\",
+    "fileName": "symbol_royal_A.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_A\\",
+    "fileName": "symbol_royal_A.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_A\\",
+    "fileName": "symbol_royal_A.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_J\\",
+    "fileName": "symbol_royal_J.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_J\\",
+    "fileName": "symbol_royal_J.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_J\\",
+    "fileName": "symbol_royal_J.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_K\\",
+    "fileName": "symbol_royal_K.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_K\\",
+    "fileName": "symbol_royal_K.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_K\\",
+    "fileName": "symbol_royal_K.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_Q\\",
+    "fileName": "symbol_royal_Q.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_Q\\",
+    "fileName": "symbol_royal_Q.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\symbol_royal_Q\\",
+    "fileName": "symbol_royal_Q.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_PickBonus_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_PickBonus.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_PickBonus_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_PickBonus_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_PickBonus_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_PickBonus_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_PickBonus_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_PickBonus_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_Wilds_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_Wilds.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_Wilds_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_Wilds_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Special_Receiver_Wilds_Portrait\\",
+    "fileName": "Symbol_Special_Receiver_Wilds_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Transition_VFX_Portrait\\",
+    "fileName": "Symbol_Transition_VFX.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Transition_VFX_Portrait\\",
+    "fileName": "Symbol_Transition_VFX_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Transition_VFX_Portrait\\",
+    "fileName": "Symbol_Transition_VFX_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Wild_Portrait\\",
+    "fileName": "Symbol_Wild.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Wild_Portrait\\",
+    "fileName": "Symbol_Wild__Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols\\Symbol_Wild_Portrait\\",
+    "fileName": "Symbol_Wild__Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_BG_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_BG_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_BG_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_BG_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_BG_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_BG_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_LARGE_QB_Desktop\\",
+    "fileName": "Symbol_LARGE_QB_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_Transition_VFX\\",
+    "fileName": "Symbol_Transition_VFX.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_Transition_VFX\\",
+    "fileName": "Symbol_Transition_VFX.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Symbol_Transition_VFX\\",
+    "fileName": "Symbol_Transition_VFX.png"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Wild_Symbol_Transition_VFX\\",
+    "fileName": "Wild_Symbol_Transition_VFX.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Wild_Symbol_Transition_VFX\\",
+    "fileName": "Wild_Symbol_Transition_VFX.json"
+  },
+  {
+    "filePath": "assets\\Spine\\symbols_Desktop\\Wild_Symbol_Transition_VFX\\",
+    "fileName": "Wild_Symbol_Transition_VFX.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Desktop\\",
+    "fileName": "Antic_Highlight_VFX_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Desktop\\",
+    "fileName": "Antic_Highlight_VFX_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Desktop\\",
+    "fileName": "Antic_Highlight_VFX_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Portrait\\",
+    "fileName": "Antic_Highlight_VFX_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Portrait\\",
+    "fileName": "Antic_Highlight_VFX_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Antic_Highlight_VFX_Portrait\\",
+    "fileName": "Antic_Highlight_VFX_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Win_Highlight2_VFX_Front_Portrait\\",
+    "fileName": "Win_Highlight2_VFX_Front.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Win_Highlight2_VFX_Front_Portrait\\",
+    "fileName": "Win_Highlight2_VFX_Front_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes\\Win_Highlight2_VFX_Front_Portrait\\",
+    "fileName": "Win_Highlight2_VFX_Front_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Symbol_Receiver_VFX\\",
+    "fileName": "Symbol_Receiver_VFX.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Symbol_Receiver_VFX\\",
+    "fileName": "Symbol_Receiver_VFX_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Symbol_Receiver_VFX\\",
+    "fileName": "Symbol_Receiver_VFX_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Back_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Back_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Back_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Back_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Back_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Back_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Front_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Front_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Front_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Front_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\winframes_Desktop\\Win_Highlight2_VFX_Front_Desktop\\",
+    "fileName": "Win_Highlight2_VFX_Front_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Label\\",
+    "fileName": "Win_Label.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Label\\",
+    "fileName": "Win_Label.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Label\\",
+    "fileName": "Win_Label.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "popUp_BonusTrigger.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "popUp_BonusTrigger.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "popUp_BonusTrigger.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_1.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_3.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_4.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_5.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop_3.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Desktop\\",
+    "fileName": "Win_Messages_Desktop_6.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait.atlas"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait.json"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait_2.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait_3.png"
+  },
+  {
+    "filePath": "assets\\Spine\\Win_Messages_Portrait\\",
+    "fileName": "Win_Messages_Portrait_6.png"
+  }
+]
