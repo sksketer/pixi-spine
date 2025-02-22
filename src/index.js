@@ -12,10 +12,16 @@ globalThis.__PIXI_APP__ = app;
 document.body.appendChild(app.view);
 resizeCanvas.call(this, app);
 
+const _path = "./assets/";
+const filePath = "Spine/featureSpine/landscape/";
+const fileName = "Pick_Your_Receiver_Desktop";
+
+
 app.loader
-    .add("spineCharacter", "./assets/1/Win_Label.json")
-    .add("spineAtlas", "./assets/1/Win_Label.atlas")
-    .add("spinePng", "./assets/1/Win_Label.png")
+    .add("spineCharacter", `${_path}${filePath}${fileName}.json`)
+    .add("spineAtlas", `${_path}${filePath}${fileName}.atlas`)
+    .add("spinePng", `${_path}${filePath}${fileName}.png`)
+    .add("spinePng2", `${_path}${filePath}${fileName}_2.png`)
     .load(onAssetsLoaded);
 
 function onAssetsLoaded(loader, resources) {
@@ -31,8 +37,10 @@ function onAssetsLoaded(loader, resources) {
     spineCharacter.position.set(400, 300);
     spineCharacter.scale.set(0.5);
 
+    const animName = Object.keys(resources.spineCharacter.data.animations)[0];
+
     // Play Animation
-    spineCharacter.state.setAnimation(0, 'Win_Label_Outro', true); // Replace with your actual animation
+    spineCharacter.state.setAnimation(0, animName, true); // Replace with your actual animation
 
     // Add to Stage
     app.stage.addChild(spineCharacter);    
