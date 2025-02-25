@@ -1,7 +1,5 @@
-import { Application, BaseTexture } from 'pixi.js';
-import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
-import { TextureAtlas } from '@pixi-spine/base'; // FIX: Use TextureAtlas instead of SpineTextureAtlas
-import listFile from '../output.json';
+import { Application } from 'pixi.js';
+import SpineCreator from './SpineCreator'; // Import the SpineCreator class
 
 const app = new Application({
     width: 800,
@@ -13,60 +11,37 @@ globalThis.__PIXI_APP__ = app;
 document.body.appendChild(app.view);
 resizeCanvas(app);
 
-const allSpines = [];
-const createdSpines = [];
-const failedSpines = [];
-const ignoreFile = [];
+// Initialize the SpineCreator
+const spineCreator = new SpineCreator(app);
 
-async function loadAssets(fileData, fileName) {
-    return new Promise((resolve) => {
-        app.loader
-            .add(`spineCharacter_${fileName}`, fileData["json"])
-            .add(`spineAtlas_${fileName}`, fileData["atlas"])
-            .add(`spinePng_${fileName}`, fileData["image"])
-            .load((loader, resources) => resolve(resources));
-    });
-}
+const fileInput = document.getElementById('spineFileInput');
 
-async function createSpine(fileName, fileData) {
-    try {
-        const resources = await loadAssets(fileData, fileName);
-        const spineAtlas = new TextureAtlas(resources[`spineAtlas_${fileName}`].data, (line, callback) => {
-            callback(BaseTexture.from(resources[`spinePng_${fileName}`].url));
-        });
-
-        const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
-        const spineJsonParser = new SkeletonJson(spineAtlasLoader);
-        const spineData = spineJsonParser.readSkeletonData(resources[`spineCharacter_${fileName}`].data);
-
-        const spineCharacter = new Spine(spineData);
-        spineCharacter.position.set(400, 300);
-        spineCharacter.scale.set(0.5);
-        
-        createdSpines.push(fileName);
-
-        const animName = Object.keys(resources[`spineCharacter_${fileName}`].data.animations)[0];
-        spineCharacter.state.setAnimation(0, animName, true);
-        
-        app.stage.addChild(spineCharacter);
-    } catch (error) {
-        failedSpines.push(fileName);
-        console.error(`Error loading spine asset ${fileName}:`, error);
+fileInput.addEventListener('change', async (event) => {
+    const files = event.target.files;
+    if (files.length >= 3) { // We need at least 3 files (JSON, Atlas, PNG)
+        const fileData = await readFiles(files);
+        const fileName = files[0].name.split('.')[0]; // We can use the file name without extension
+        await spineCreator.createSpine(fileName, fileData);
+    } else {
+        alert("Please upload at least 3 files: JSON, Atlas, and PNG.");
     }
-}
+});
 
-(async () => {
-    for (const [fileName, fileData] of Object.entries(listFile)) {
-        if (fileData["atlas"] && fileData["json"] && (fileData["image"])) {
-            console.log("----------------------------------");
-            allSpines.push(fileName);
-            await createSpine(fileName, fileData);
-        } else {
-            ignoreFile.push(fileName);
+// Helper function to read files
+async function readFiles(files) {
+    const fileData = {};
+    for (let file of files) {
+        const fileName = file.name.toLowerCase();
+        if (fileName.endsWith('.json')) {
+            fileData['json'] = file;  // Directly store the file object
+        } else if (fileName.endsWith('.atlas')) {
+            fileData['atlas'] = file;  // Directly store the file object
+        } else if (fileName.endsWith('.png')) {
+            fileData['image'] = file;  // Directly store the file object
         }
     }
-    window.SpinesData = { allSpines, createdSpines, failedSpines, ignoreFile };
-})();
+    return fileData;
+}
 
 window.addEventListener("resize", () => resizeCanvas(app));
 
