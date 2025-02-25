@@ -23,7 +23,7 @@ async function loadAssets(fileData, fileName) {
         app.loader
             .add(`spineCharacter_${fileName}`, fileData["json"])
             .add(`spineAtlas_${fileName}`, fileData["atlas"])
-            .add(`spinePng_${fileName}`, fileData["png"] || fileData["jpg"] || fileData["jpeg"])
+            .add(`spinePng_${fileName}`, fileData["image"])
             .load((loader, resources) => resolve(resources));
     });
 }
@@ -57,7 +57,7 @@ async function createSpine(fileName, fileData) {
 
 (async () => {
     for (const [fileName, fileData] of Object.entries(listFile)) {
-        if (fileData["atlas"] && fileData["json"] && (fileData["png"] || fileData["jpg"] || fileData["jpeg"])) {
+        if (fileData["atlas"] && fileData["json"] && (fileData["image"])) {
             console.log("----------------------------------");
             allSpines.push(fileName);
             await createSpine(fileName, fileData);

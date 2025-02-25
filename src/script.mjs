@@ -1,44 +1,60 @@
-import { readdirSync, statSync, writeFileSync, existsSync } from 'fs';
-import { join, relative, extname, basename } from 'path';
+import { readdir, readFile, writeFile } from "fs/promises";
+import { extname, join, basename, relative } from "path";
 
-// Define important paths
-const projectRoot = process.cwd(); // Root directory where the script runs
-const spineDir = join(projectRoot, 'src', 'assets', 'Spine'); // Target directory
-const outputFile = join(projectRoot, 'output.json');
+async function traverseDirectory(dir, result = {}) {
+    const entries = await readdir(dir, { withFileTypes: true });
 
-let filesData = {}; // Store data as { commonFileName: { ext: filePath } }
-
-// Recursive function to traverse directories safely
-function traverseDirectory(dir, baseDir) {
-    if (!existsSync(dir)) {
-        console.warn(`Warning: Directory not found - ${dir}`);
-        return;
-    }
-
-    readdirSync(dir).forEach(file => {
-        const fullPath = join(dir, file);
-        const stat = statSync(fullPath);
-
-        if (stat.isDirectory()) {
-            traverseDirectory(fullPath, baseDir);
+    for (const entry of entries) {
+        const fullPath = join(dir, entry.name);
+        if (entry.isDirectory()) {
+            await traverseDirectory(fullPath, result);
         } else {
-            const ext = extname(file).substring(1); // Get file extension (without ".")
-            const commonName = basename(file, extname(file)); // Get file name without extension
-            const relativePath = relative(baseDir, fullPath).replace(/\\/g, "/"); // Normalize path
-
-            if (!filesData[commonName]) {
-                filesData[commonName] = {};
+            const ext = extname(entry.name);
+            if (ext === ".atlas") {
+                await processAtlasFile(fullPath, result);
             }
-
-            filesData[commonName][ext] = relativePath; // Store as { ext: filePath }
         }
-    });
+    }
+    return result;
 }
 
-// Start traversal
-traverseDirectory(spineDir, join(projectRoot, 'src'));
+async function processAtlasFile(atlasPath, result) {
+    try {
+        const atlasContent = await readFile(atlasPath, "utf-8");
+        const lines = atlasContent.split("\n");
+        let imageName = "";
+        
+        for (const line of lines) {
+            if (line.trim() && !line.includes(":")) {
+                imageName = line.trim();
+                break;
+            }
+        }
+        
+        const atlasKey = basename(atlasPath, ".atlas");
+        const jsonPath = join(atlasPath, "../", `${atlasKey}.json`);
+        const imagePath = imageName ? join(atlasPath, "../", imageName) : "Unknown";
+        
+        const removeBasePath = join(process.cwd(), "src");
+        
+        result[atlasKey] = {
+            "image": relative(removeBasePath, imagePath),
+            "atlas": relative(removeBasePath, atlasPath),
+            "json": relative(removeBasePath, jsonPath)
+        };
+    } catch (error) {
+        console.error("Error processing atlas file:", error);
+    }
+}
 
-// Save data to JSON file
-writeFileSync(outputFile, JSON.stringify(filesData, null, 2), 'utf8');
-
-console.log(`File list saved to ${outputFile}`);
+(async () => {
+    const baseDir = join(process.cwd(), "src", "assets", "Spine"); // Set target directory
+    try {
+        const result = await traverseDirectory(baseDir);
+        console.log(result);
+        await writeFile("output.json", JSON.stringify(result, null, 2));
+        console.log("Output saved to output.json");
+    } catch (error) {
+        console.error("Error traversing directory:", error);
+    }
+})();
