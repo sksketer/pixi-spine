@@ -1,6 +1,7 @@
 import { Application, BaseTexture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
-import { TextureAtlas } from '@pixi-spine/base';  // FIX: Use TextureAtlas instead of SpineTextureAtlas
+import { TextureAtlas } from '@pixi-spine/base'; // FIX: Use TextureAtlas instead of SpineTextureAtlas
+import listFile from '../output.json';
 
 const app = new Application({
     width: 800,
@@ -10,43 +11,64 @@ const app = new Application({
 globalThis.__PIXI_APP__ = app;
 
 document.body.appendChild(app.view);
-resizeCanvas.call(this, app);
+resizeCanvas(app);
 
-const _path = "./assets/";
-const filePath = "Spine/featureSpine/landscape/";
-const fileName = "Pick_Your_Receiver_Desktop";
+const allSpines = [];
+const createdSpines = [];
+const failedSpines = [];
+const ignoreFile = [];
 
-
-app.loader
-    .add("spineCharacter", `${_path}${filePath}${fileName}.json`)
-    .add("spineAtlas", `${_path}${filePath}${fileName}.atlas`)
-    .add("spinePng", `${_path}${filePath}${fileName}.png`)
-    .add("spinePng2", `${_path}${filePath}${fileName}_2.png`)
-    .load(onAssetsLoaded);
-
-function onAssetsLoaded(loader, resources) {
-    const spineAtlas = new TextureAtlas(resources.spineAtlas.data, (line, callback) => {
-        callback(BaseTexture.from(resources.spinePng.url));
+async function loadAssets(fileData, fileName) {
+    return new Promise((resolve) => {
+        app.loader
+            .add(`spineCharacter_${fileName}`, fileData["json"])
+            .add(`spineAtlas_${fileName}`, fileData["atlas"])
+            .add(`spinePng_${fileName}`, fileData["png"] || fileData["jpg"] || fileData["jpeg"])
+            .load((loader, resources) => resolve(resources));
     });
-
-    const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
-    const spineJsonParser = new SkeletonJson(spineAtlasLoader);
-    const spineData = spineJsonParser.readSkeletonData(resources.spineCharacter.data);
-
-    const spineCharacter = new Spine(spineData);
-    spineCharacter.position.set(400, 300);
-    spineCharacter.scale.set(0.5);
-
-    const animName = Object.keys(resources.spineCharacter.data.animations)[0];
-
-    // Play Animation
-    spineCharacter.state.setAnimation(0, animName, true); // Replace with your actual animation
-
-    // Add to Stage
-    app.stage.addChild(spineCharacter);    
 }
 
-window.addEventListener("resize", resizeCanvas.bind(this, app));
+async function createSpine(fileName, fileData) {
+    try {
+        const resources = await loadAssets(fileData, fileName);
+        const spineAtlas = new TextureAtlas(resources[`spineAtlas_${fileName}`].data, (line, callback) => {
+            callback(BaseTexture.from(resources[`spinePng_${fileName}`].url));
+        });
+
+        const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
+        const spineJsonParser = new SkeletonJson(spineAtlasLoader);
+        const spineData = spineJsonParser.readSkeletonData(resources[`spineCharacter_${fileName}`].data);
+
+        const spineCharacter = new Spine(spineData);
+        spineCharacter.position.set(400, 300);
+        spineCharacter.scale.set(0.5);
+        
+        createdSpines.push(fileName);
+
+        const animName = Object.keys(resources[`spineCharacter_${fileName}`].data.animations)[0];
+        spineCharacter.state.setAnimation(0, animName, true);
+        
+        app.stage.addChild(spineCharacter);
+    } catch (error) {
+        failedSpines.push(fileName);
+        console.error(`Error loading spine asset ${fileName}:`, error);
+    }
+}
+
+(async () => {
+    for (const [fileName, fileData] of Object.entries(listFile)) {
+        if (fileData["atlas"] && fileData["json"] && (fileData["png"] || fileData["jpg"] || fileData["jpeg"])) {
+            console.log("----------------------------------");
+            allSpines.push(fileName);
+            await createSpine(fileName, fileData);
+        } else {
+            ignoreFile.push(fileName);
+        }
+    }
+    window.SpinesData = { allSpines, createdSpines, failedSpines, ignoreFile };
+})();
+
+window.addEventListener("resize", () => resizeCanvas(app));
 
 function resizeCanvas(app) {
     app.renderer.resize(window.innerWidth, window.innerHeight);
