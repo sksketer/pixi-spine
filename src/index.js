@@ -1,3 +1,4 @@
+import '../css/style.css'; 
 import { Application } from 'pixi.js';
 import SpineCreator from './SpineCreator'; // Import the SpineCreator class
 

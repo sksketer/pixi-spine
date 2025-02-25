@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #222;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#animSelector {
+    display: none;
+    position: absolute;
+    padding: 25px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#animSelector > * {
+    margin: 8px;
+}
