@@ -1,0 +1,27 @@
+UI_JP_Touchdown.png
+size:155,479
+filter:Linear,Linear
+scale:0.5
+FX/FX_Rectangle glow
+bounds:2,383,137,70
+FX/FX_Vertical_1_side_stripB
+bounds:2,20,101,361
+offsets:3,0,107,448
+UI_Jackpots/UI_JP_ Trophy_FX
+bounds:105,93,45,64
+offsets:1,1,47,66
+UI_Jackpots/UI_JP_Jackpot_Tag
+bounds:2,455,151,22
+offsets:0,1,152,23
+UI_Jackpots/UI_JP_Touchdown_Yellow_Base
+bounds:105,159,198,45
+offsets:0,1,199,46
+rotate:90
+UI_Jackpots/UI_JP_Touchdown_txt
+bounds:141,359,94,12
+rotate:90
+UI_Jackpots/UI_JP_Trophy
+bounds:105,29,42,62
+offsets:1,1,44,64
+placeholder
+bounds:105,2,25,25

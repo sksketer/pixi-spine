@@ -1,0 +1,12 @@
+Bonus_WinMessage_Yards.png
+size:337,170
+filter:Linear,Linear
+scale:0.5
+Bonus/Win Message_Color Base
+bounds:2,2,329,94
+offsets:2,2,333,98
+Bonus/Win Message_Yellow Frame
+bounds:29,98,306,70
+offsets:1,1,308,72
+Bonus/placeholder
+bounds:2,143,25,25

@@ -1,0 +1,28 @@
+UI_JP_ExtraPoint_Desktop.png
+size:1413,205
+filter:Linear,Linear
+FX/FX_Rectangle glow
+bounds:741,64,274,139
+FX/FX_Vertical_1_side_stripB
+bounds:2,2,201,737
+offsets:6,1,213,895
+rotate:90
+UI_Jackpots/UI_JP_ Trophy_FX
+bounds:1204,23,89,128
+offsets:2,2,93,132
+rotate:90
+UI_Jackpots/UI_JP_ExtraPoint_Blue_Base
+bounds:1017,114,394,89
+offsets:1,2,397,92
+UI_Jackpots/UI_JP_ExtraPoint_txt
+bounds:1017,90,185,22
+offsets:1,1,187,24
+UI_Jackpots/UI_JP_Jackpot_Tag
+bounds:741,19,301,43
+offsets:1,2,304,46
+UI_Jackpots/UI_JP_Trophy
+bounds:1044,3,85,124
+offsets:1,1,87,127
+rotate:90
+placeholder
+bounds:1334,62,50,50

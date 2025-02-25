@@ -1,0 +1,24 @@
+Antic_Highlight_VFX_Portrait.png
+size:900,900
+filter:Linear,Linear
+FX/Antic_Highlight_VFX/frame blurred
+bounds:2,385,216,510
+offsets:2,0,220,510
+FX/Antic_Highlight_VFX/frame_LARGE_ANTIC_0
+bounds:697,5,197,488
+offsets:12,9,220,510
+FX/Antic_Highlight_VFX/frame_LARGE_ANTIC_1
+bounds:2,181,202,495
+offsets:9,8,220,510
+rotate:90
+FX/Antic_Highlight_VFX/frame_LARGE_ANTIC_2
+bounds:220,495,200,490
+offsets:10,8,220,510
+rotate:90
+FX/Antic_Highlight_VFX/frame_LARGE_ANTIC_3
+bounds:220,697,198,494
+offsets:12,7,220,510
+rotate:90
+FX/Antic_Highlight_VFX/frame_LARGE_ANTIC_4
+bounds:499,2,196,491
+offsets:12,11,220,510

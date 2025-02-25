@@ -1,0 +1,9 @@
+symbol_royal_A.png
+size:600,285
+filter:Linear,Linear
+Symbol_LP_A
+bounds:0,0,299,285
+offsets:7,13,314,308
+Symbol_LP_A_Glow
+bounds:301,0,299,285
+offsets:7,13,314,308

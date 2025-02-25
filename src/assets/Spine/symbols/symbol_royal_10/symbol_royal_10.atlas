@@ -1,0 +1,11 @@
+symbol_royal_10.png
+size:828,271
+filter:Linear,Linear
+Symbol_LP_10_0
+bounds:0,1,234,270
+Symbol_LP_10_0_Glow
+bounds:236,1,234,270
+Symbol_LP_10_1
+bounds:472,0,177,271
+Symbol_LP_10_1_Glow
+bounds:651,0,177,271

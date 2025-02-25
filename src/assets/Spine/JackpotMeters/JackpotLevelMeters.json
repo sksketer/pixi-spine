@@ -1,0 +1,653 @@
+{
+	"skeleton": {
+		"hash": "BB8hdEP3Hm4",
+		"spine": "4.0-from-4.1.21",
+		"x": -511.66,
+		"y": -116.25,
+		"width": 1030.25,
+		"height": 284.25,
+		"images": "./images/ui_jackpots_v2/",
+		"audio": "H:/Unidades compartidas/Pixiu Freelance Workspace/Dan Marino Gunslinger FW/Working/Animation/Spine"
+	},
+	"bones": [
+		{ "name": "root" },
+		{ "name": "jackpot_all", "parent": "root" },
+		{ "name": "jackpot_3", "parent": "jackpot_all", "length": 100, "x": 4.84, "y": 57.91, "color": "00ac10ff" },
+		{ "name": "rectX5", "parent": "jackpot_3", "scaleX": 1.4333, "scaleY": 1.4333 },
+		{ "name": "goldenRectTouchdown", "parent": "rectX5", "x": -94.39, "y": 26, "color": "ea00f5ff" },
+		{ "name": "goldenRect_fx", "parent": "goldenRectTouchdown", "x": 122.39, "y": 4 },
+		{ "name": "jackpot_2", "parent": "jackpot_all", "length": 100, "x": 261.63, "y": -61.86, "color": "00ac10ff" },
+		{ "name": "rectX4", "parent": "jackpot_2", "scaleX": 1.11, "scaleY": 1.11 },
+		{ "name": "jackpot_1", "parent": "jackpot_all", "length": 100, "x": -254.7, "y": -61.86, "color": "00ac10ff" },
+		{ "name": "rectX3", "parent": "jackpot_1", "scaleX": 1.11, "scaleY": 1.11 },
+		{ "name": "goldenRectExtraPoint", "parent": "rectX3", "x": -66.8, "y": 26, "color": "ea00f5ff" },
+		{ "name": "goldenRectFieldGoal", "parent": "rectX4", "x": -66.8, "y": 26, "color": "ea00f5ff" },
+		{ "name": "goldenRect_fx2", "parent": "goldenRectExtraPoint", "x": 98.3 },
+		{ "name": "goldenRect_fx3", "parent": "goldenRectFieldGoal", "x": 98.3 },
+		{ "name": "trophyx5", "parent": "jackpot_3", "x": -175.34, "y": -48.71, "color": "ff5d00ff" },
+		{
+			"name": "trophyx3",
+			"parent": "jackpot_1",
+			"x": -107.44,
+			"y": -38.15,
+			"scaleX": 0.635,
+			"scaleY": 0.635,
+			"color": "ff5d00ff"
+		},
+		{
+			"name": "trophyx4",
+			"parent": "jackpot_2",
+			"x": -107.44,
+			"y": -38.15,
+			"scaleX": 0.635,
+			"scaleY": 0.635,
+			"color": "ff5d00ff"
+		},
+		
+		
+	
+		{ "name": "FX_Vertical_1_side_stripB", "parent": "jackpot_1", "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB2", "parent": "FX_Vertical_1_side_stripB", "x": -24.37, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB3", "parent": "FX_Vertical_1_side_stripB", "rotation": 180, "x": 13.13, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB4", "parent": "jackpot_2", "x": 0.04, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB5", "parent": "FX_Vertical_1_side_stripB4", "x": -24.37, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB6", "parent": "FX_Vertical_1_side_stripB4", "rotation": 180, "x": 13.13, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB7", "parent": "jackpot_3", "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB8", "parent": "FX_Vertical_1_side_stripB7", "x": -26.25, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "FX_Vertical_1_side_stripB9", "parent": "FX_Vertical_1_side_stripB7", "rotation": 180, "x": 10.88, "shearY": -22.5, "color": "001bffff" },
+		{ "name": "formatDimensions", "parent": "root", "color": "abe323ff" }
+	
+	],
+	"slots": [
+		{ "name": "refs/01_Basegame_Portrait_01", "bone": "root" },
+		{ "name": "FX_Vertical_1_side_stripB5", "bone": "FX_Vertical_1_side_stripB8", "blend": "additive" },
+		{ "name": "FX_Vertical_1_side_stripB6", "bone": "FX_Vertical_1_side_stripB9", "blend": "additive" },
+		{ "name": "rectX5", "bone": "rectX5", "attachment": "rectX5" },
+		{ "name": "rectX5_fx", "bone": "rectX5", "blend": "additive" },
+		
+		
+		{ "name": "goldenRectTouchdown", "bone": "goldenRectTouchdown", "attachment": "goldenRectTouchdown" },
+		{ "name": "trophyx5", "bone": "trophyx5", "attachment": "trophy" },
+		{ "name": "trophy_fx5", "bone": "trophyx5", "blend": "additive" },
+		{ "name": "goldenRect_fx", "bone": "goldenRect_fx", "blend": "additive" },
+		{ "name": "txt_touchdown", "bone": "goldenRectTouchdown", "attachment": "txt_touchdown" },
+		{ "name": "UI_Jackpot_2", "bone": "root" },
+		{ "name": "FX_Vertical_1_side_stripB3", "bone": "FX_Vertical_1_side_stripB5", "blend": "additive" },
+		{ "name": "FX_Vertical_1_side_stripB4", "bone": "FX_Vertical_1_side_stripB6", "blend": "additive" },
+		{ "name": "rectX4", "bone": "rectX4", "attachment": "rectX4" },
+		{ "name": "rectX4_fx", "bone": "rectX4", "blend": "additive" },
+		{ "name": "goldenRectFieldGoal", "bone": "goldenRectFieldGoal", "attachment": "goldenRectFieldGoal" },
+		
+		
+		{ "name": "goldenRect_fx3", "bone": "goldenRect_fx3", "blend": "additive" },
+		{ "name": "txt_field_goal", "bone": "goldenRectFieldGoal", "attachment": "txt_field_goal" },
+		{ "name": "trophyx4", "bone": "trophyx4", "attachment": "trophy" },
+		{ "name": "trophy_fx4", "bone": "trophyx4", "blend": "additive" },
+		{ "name": "UI_Jackpot_1", "bone": "root" },
+		{ "name": "FX_Vertical_1_side_stripB", "bone": "FX_Vertical_1_side_stripB2", "blend": "additive" },
+		{ "name": "FX_Vertical_1_side_stripB2", "bone": "FX_Vertical_1_side_stripB3", "blend": "additive" },
+		{ "name": "rectX3", "bone": "rectX3", "attachment": "rectX3" },
+		{ "name": "rectX3_fx", "bone": "rectX3", "blend": "additive" },
+		{ "name": "goldenRectExtraPoint", "bone": "goldenRectExtraPoint", "attachment": "goldenRectExtraPoint" },
+		
+		
+		{ "name": "UI_Jackpot_3", "bone": "root" },
+		{ "name": "goldenRect_fx2", "bone": "goldenRect_fx2", "blend": "additive" },
+		{ "name": "txt_extra_point", "bone": "goldenRectExtraPoint", "attachment": "txt_extra_point" },
+		{ "name": "trophyx3", "bone": "trophyx3", "attachment": "trophy" },
+		{ "name": "trophy_fx3", "bone": "trophyx3", "blend": "additive" },
+		{ "name": "refs/01_Basegame_Stop", "bone": "root" }
+	],
+	"transform": [
+		{
+			"name": "ls",
+			"skin": true,
+			"bones": [ "jackpot_all" ],
+			"target": "formatDimensions",
+			"scaleX": -0.18,
+			"scaleY": -0.18,
+			"mixRotate": 0,
+			"mixX": 0,
+			"mixShearY": 0
+		}
+	],
+	"skins": [
+		{
+			"name": "default",
+			"attachments": {
+				"FX_Vertical_1_side_stripB": {
+					"FX_Vertical_1_side_stripB": { "x": 18.95, "y": 107.46, "scaleX": 4.6, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"FX_Vertical_1_side_stripB2": {
+					"FX_Vertical_1_side_stripB": { "x": 17.82, "y": 107.46, "scaleX": 4.6, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"FX_Vertical_1_side_stripB3": {
+					"FX_Vertical_1_side_stripB": { "x": 18.95, "y": 107.46, "scaleX": 4.6, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"FX_Vertical_1_side_stripB4": {
+					"FX_Vertical_1_side_stripB": { "x": 17.82, "y": 107.46, "scaleX": 4.6, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"FX_Vertical_1_side_stripB5": {
+					"FX_Vertical_1_side_stripB": { "x": 18.95, "y": 107.46, "scaleX": 7.1087, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"FX_Vertical_1_side_stripB6": {
+					"FX_Vertical_1_side_stripB": { "x": 17.82, "y": 107.46, "scaleX": 7.1087, "scaleY": 0.25, "width": 213, "height": 895 }
+				},
+				"goldenRectExtraPoint": {
+					"goldenRectExtraPoint": { "x": 98.3, "width": 234, "height": 46 }
+				},
+				"goldenRectFieldGoal": {
+					"goldenRectFieldGoal": { "x": 98.3, "width": 234, "height": 46 }
+				},
+				"goldenRectTouchdown": {
+					"goldenRectTouchdown": { "x": 126.39, "width": 274, "height": 46 }
+				},
+				"goldenRect_fx": {
+					"goldenRect_fx": {
+						"type": "mesh",
+						"uvs": [ 1, 1, 0.85461, 1, 0.0563, 0.99999, 0, 1, 0, 0, 0.12999, 0, 0.9237, 0, 1, 0 ],
+						"triangles": [ 2, 4, 5, 3, 4, 2, 1, 5, 6, 2, 5, 1, 6, 7, 0, 1, 6, 0 ],
+						"vertices": [ 142, -28, 100.71, -28, -126.01, -28, -142, -28, -142, 28, -105.08, 28, 120.33, 28, 142, 28 ],
+						"hull": 8,
+						"edges": [ 6, 8, 0, 14, 8, 10, 4, 6, 10, 12, 12, 14, 0, 2, 2, 4 ],
+						"width": 284,
+						"height": 56
+					}
+				},
+				"goldenRect_fx2": {
+					"goldenRect_fx": {
+						"type": "mesh",
+						"uvs": [ 1, 1, 0.85461, 1, 0.0563, 0.99999, 0, 1, 0, 0, 0.12999, 0, 0.9237, 0, 1, 0 ],
+						"triangles": [ 2, 4, 5, 3, 4, 2, 1, 5, 6, 2, 5, 1, 6, 7, 0, 1, 6, 0 ],
+						"vertices": [ 116.93, -28, 75.64, -28, -107.43, -28, -123.42, -28, -123.42, 28, -86.5, 28, 95.26, 28, 116.93, 28 ],
+						"hull": 8,
+						"edges": [ 6, 8, 0, 14, 8, 10, 4, 6, 10, 12, 12, 14, 0, 2, 2, 4 ],
+						"width": 284,
+						"height": 56
+					}
+				},
+				"goldenRect_fx3": {
+					"goldenRect_fx": {
+						"type": "mesh",
+						"uvs": [ 1, 1, 0.85461, 1, 0.0563, 0.99999, 0, 1, 0, 0, 0.12999, 0, 0.9237, 0, 1, 0 ],
+						"triangles": [ 2, 4, 5, 3, 4, 2, 1, 5, 6, 2, 5, 1, 6, 7, 0, 1, 6, 0 ],
+						"vertices": [ 116.93, -28, 75.64, -28, -107.43, -28, -123.42, -28, -123.42, 28, -86.5, 28, 95.26, 28, 116.93, 28 ],
+						"hull": 8,
+						"edges": [ 6, 8, 0, 14, 8, 10, 4, 6, 10, 12, 12, 14, 0, 2, 2, 4 ],
+						"width": 284,
+						"height": 56
+					}
+				},
+			
+				
+				
+				
+				"rectX3": {
+					"rectX3": { "width": 463, "height": 98 }
+				},
+				"rectX3_fx": {
+					"rectX3_fx": { "x": -3.5, "y": 5, "width": 534, "height": 168 }
+				},
+				"rectX4": {
+					"rectX4": { "width": 463, "height": 98 }
+				},
+				"rectX4_fx": {
+					"rectX4_fx": { "x": -3.5, "y": 5, "width": 534, "height": 168 }
+				},
+				"rectX5": {
+					"rectX5": { "width": 544, "height": 98 }
+				},
+				"rectX5_fx": {
+					"rectX5_fx": { "x": -3.5, "y": 5, "width": 613, "height": 168 }
+				},
+				"refs/01_Basegame_Stop": {
+					"refs/01_Basegame_Stop": { "x": 1.19, "y": -401.61, "width": 1920, "height": 1080 }
+				},
+				"trophyx3": {
+					"trophy": { "y": 73.3, "width": 115, "height": 171 }
+				},
+				"trophyx4": {
+					"trophy": { "y": 73.3, "width": 115, "height": 171 }
+				},
+				"trophyx5": {
+					"trophy": { "y": 73.3, "width": 115, "height": 171 }
+				},
+				"trophy_fx3": {
+					"trophy_fx": { "y": 73.3, "width": 125, "height": 181 }
+				},
+				"trophy_fx4": {
+					"trophy_fx": { "y": 73.3, "width": 125, "height": 181 }
+				},
+				"trophy_fx5": {
+					"trophy_fx": { "y": 73.3, "width": 125, "height": 181 }
+				},
+				"txt_extra_point": {
+					"txt_extra_point": { "x": 96.91, "y": 4.27, "scaleX": 0.8871, "scaleY": 0.8871, "width": 207, "height": 28 }
+				},
+				"txt_field_goal": {
+					"txt_field_goal": { "x": 98.22, "y": 4.37, "scaleX": 0.8871, "scaleY": 0.8871, "width": 179, "height": 28 }
+				},
+				"txt_touchdown": {
+					"txt_touchdown": { "x": 119.76, "y": 5.01, "scaleX": 0.705, "scaleY": 0.705, "width": 268, "height": 36 }
+				}
+			}
+		},
+		{
+			"name": "ls",
+			"transform": [ "ls" ]
+		}
+	],
+	"animations": {
+		"extraPoint_react": {
+			"slots": {
+				"FX_Vertical_1_side_stripB": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"FX_Vertical_1_side_stripB2": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"goldenRect_fx2": {
+					"alpha": [
+						{
+							"time": 0.2333,
+							"value": 0.0013,
+							"curve": [ 0.257, 0.41, 0.3, 0.61 ]
+						},
+						{
+							"time": 0.3333,
+							"value": 0.6121,
+							"curve": [ 0.411, 0.61, 0.504, 0.01 ]
+						},
+						{ "time": 0.5667, "value": 0.0013 }
+					],
+					"attachment": [
+						{ "time": 0.2333, "name": "goldenRect_fx" }
+					]
+				},
+				"rectX3_fx": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.192, 0.91, 0.252, 1 ]
+						},
+						{
+							"time": 0.3667,
+							"value": 1,
+							"curve": [ 0.467, 1, 0.567, 0 ]
+						},
+						{ "time": 0.6667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "rectX3_fx" }
+					]
+				},
+				"trophy_fx3": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.182, 0.89, 0.211, 1 ]
+						},
+						{
+							"time": 0.2667,
+							"value": 0.99869996,
+							"curve": [ 0.344, 1, 0.422, 0 ]
+						},
+						{ "time": 0.5, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "trophy_fx" }
+					]
+				}
+			},
+			"bones": {
+				
+				"trophyx3": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.182, 1.185, 0.211, 1.208, 0.182, 1.185, 0.211, 1.208 ]
+						},
+						{
+							"time": 0.2667,
+							"x": 1.208,
+							"y": 1.208,
+							"curve": [ 0.344, 1.208, 0.422, 1, 0.344, 1.208, 0.422, 1 ]
+						},
+						{ "time": 0.5 }
+					]
+				},
+				"goldenRectExtraPoint": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.209, 1.117, 0.278, 1.171, 0.209, 1.117, 0.278, 1.171 ]
+						},
+						{
+							"time": 0.3333,
+							"x": 1.171,
+							"y": 1.171,
+							"curve": [ 0.411, 1.171, 0.489, 1, 0.411, 1.171, 0.489, 1 ]
+						},
+						{ "time": 0.5667 }
+					]
+				},
+				"jackpot_1": {
+					"translatex": [
+						{ "time": 0.0667 },
+						{ "time": 0.1, "value": -26.28 },
+						{ "time": 0.1333, "value": 14.94 },
+						{ "time": 0.2, "value": -26.28 },
+						{ "time": 0.2667, "value": 14.94 },
+						{ "time": 0.3333 }
+					]
+				}
+			}
+		},
+		"fieldGoal_react": {
+			"slots": {
+				"FX_Vertical_1_side_stripB3": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"FX_Vertical_1_side_stripB4": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"goldenRect_fx3": {
+					"alpha": [
+						{
+							"time": 0.2333,
+							"value": 0.0013,
+							"curve": [ 0.257, 0.41, 0.3, 0.61 ]
+						},
+						{
+							"time": 0.3333,
+							"value": 0.6121,
+							"curve": [ 0.411, 0.61, 0.504, 0.01 ]
+						},
+						{ "time": 0.5667, "value": 0.0013 }
+					],
+					"attachment": [
+						{ "time": 0.2333, "name": "goldenRect_fx" }
+					]
+				},
+				"rectX4_fx": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.192, 0.91, 0.252, 1 ]
+						},
+						{
+							"time": 0.3667,
+							"value": 1,
+							"curve": [ 0.467, 1, 0.567, 0 ]
+						},
+						{ "time": 0.6667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "rectX4_fx" }
+					]
+				},
+				"trophy_fx4": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.182, 0.89, 0.211, 1 ]
+						},
+						{
+							"time": 0.2667,
+							"value": 0.99869996,
+							"curve": [ 0.344, 1, 0.422, 0 ]
+						},
+						{ "time": 0.5, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "trophy_fx" }
+					]
+				}
+			},
+			"bones": {
+				
+				"trophyx4": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.182, 1.185, 0.211, 1.208, 0.182, 1.185, 0.211, 1.208 ]
+						},
+						{
+							"time": 0.2667,
+							"x": 1.208,
+							"y": 1.208,
+							"curve": [ 0.344, 1.208, 0.422, 1, 0.344, 1.208, 0.422, 1 ]
+						},
+						{ "time": 0.5 }
+					]
+				},
+				"goldenRectFieldGoal": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.209, 1.117, 0.278, 1.171, 0.209, 1.117, 0.278, 1.171 ]
+						},
+						{
+							"time": 0.3333,
+							"x": 1.171,
+							"y": 1.171,
+							"curve": [ 0.411, 1.171, 0.489, 1, 0.411, 1.171, 0.489, 1 ]
+						},
+						{ "time": 0.5667 }
+					]
+				},
+				"jackpot_2": {
+					"translatex": [
+						{ "time": 0.0667 },
+						{ "time": 0.1, "value": -26.28 },
+						{ "time": 0.1333, "value": 14.94 },
+						{ "time": 0.2, "value": -26.28 },
+						{ "time": 0.2667, "value": 14.94 },
+						{ "time": 0.3333 }
+					]
+				}
+			}
+		},
+		"touchDown_react": {
+			"slots": {
+				"FX_Vertical_1_side_stripB5": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"FX_Vertical_1_side_stripB6": {
+					"alpha": [
+						{
+							"time": 0.2667,
+							"value": 0,
+							"curve": [ 0.295, 0.61, 0.356, 0.59 ]
+						},
+						{
+							"time": 0.4,
+							"value": 0.5915,
+							"curve": [ 0.456, 0.59, 0.52, 0 ]
+						},
+						{ "time": 0.5667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.2667, "name": "FX_Vertical_1_side_stripB" }
+					]
+				},
+				"goldenRect_fx": {
+					"alpha": [
+						{
+							"time": 0.2333,
+							"value": 0.0013,
+							"curve": [ 0.257, 0.41, 0.3, 0.61 ]
+						},
+						{
+							"time": 0.3333,
+							"value": 0.6121,
+							"curve": [ 0.411, 0.61, 0.504, 0.01 ]
+						},
+						{ "time": 0.5667, "value": 0.0013 }
+					],
+					"attachment": [
+						{ "time": 0.2333, "name": "goldenRect_fx" }
+					]
+				},
+				"rectX5_fx": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.192, 0.91, 0.252, 1 ]
+						},
+						{
+							"time": 0.3667,
+							"value": 1,
+							"curve": [ 0.467, 1, 0.567, 0 ]
+						},
+						{ "time": 0.6667, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "rectX5_fx" }
+					]
+				},
+				"trophy_fx5": {
+					"alpha": [
+						{
+							"time": 0.1667,
+							"value": 0,
+							"curve": [ 0.182, 0.89, 0.211, 1 ]
+						},
+						{
+							"time": 0.2667,
+							"value": 0.99869996,
+							"curve": [ 0.344, 1, 0.422, 0 ]
+						},
+						{ "time": 0.5, "value": 0 }
+					],
+					"attachment": [
+						{ "time": 0.1667, "name": "trophy_fx" }
+					]
+				}
+			},
+			"bones": {
+				
+				"trophyx5": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.182, 1.131, 0.211, 1.147, 0.182, 1.131, 0.211, 1.147 ]
+						},
+						{
+							"time": 0.2667,
+							"x": 1.147,
+							"y": 1.147,
+							"curve": [ 0.344, 1.147, 0.422, 1, 0.344, 1.147, 0.422, 1 ]
+						},
+						{ "time": 0.5 }
+					]
+				},
+				"goldenRectTouchdown": {
+					"scale": [
+						{
+							"time": 0.1667,
+							"curve": [ 0.209, 1.117, 0.278, 1.171, 0.209, 1.117, 0.278, 1.171 ]
+						},
+						{
+							"time": 0.3333,
+							"x": 1.171,
+							"y": 1.171,
+							"curve": [ 0.411, 1.171, 0.489, 1, 0.411, 1.171, 0.489, 1 ]
+						},
+						{ "time": 0.5667 }
+					]
+				},
+				"jackpot_3": {
+					"translatex": [
+						{ "time": 0.0667 },
+						{ "time": 0.1, "value": -26.28 },
+						{ "time": 0.1333, "value": 14.94 },
+						{ "time": 0.2, "value": -26.28 },
+						{ "time": 0.2667, "value": 14.94 },
+						{ "time": 0.3333 }
+					]
+				}
+			}
+		}
+	}
+	}

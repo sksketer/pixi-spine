@@ -1,0 +1,21 @@
+Bonus_Retrigger.png
+size:323,233
+filter:Linear,Linear
+scale:0.5
+Bonus/placeholder
+bounds:296,206,25,25
+Win_Label_Retrigger/BG_retrigger
+bounds:2,179,292,52
+offsets:8,0,307,52
+Win_Label_Retrigger/FX_retrigger_Halo01
+bounds:160,23,153,154
+offsets:3,2,158,158
+Win_Label_Retrigger/FX_retrigger_Halo02
+bounds:2,21,156,156
+offsets:2,2,160,160
+Win_Label_Retrigger/line BOTTOM
+bounds:2,11,252,8
+offsets:18,0,271,8
+Win_Label_Retrigger/line TOP
+bounds:2,2,263,7
+offsets:16,0,285,7

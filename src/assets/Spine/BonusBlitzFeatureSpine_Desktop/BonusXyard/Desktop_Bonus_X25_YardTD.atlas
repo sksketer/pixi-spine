@@ -1,0 +1,62 @@
+Desktop_Bonus_X25_YardTD.png
+size:1332,1332
+filter:Linear,Linear
+Bonus/TD
+bounds:852,711,54,33
+offsets:1,1,56,35
+Bonus/UI_Bonus_Meter_Multiplier_Active_25
+bounds:997,150,202,95
+offsets:43,22,290,138
+Bonus/UI_Bonus_Meter_Multiplier_Inactive_25
+bounds:1258,1147,185,68
+offsets:5,0,195,76
+rotate:90
+Bonus/Yard
+bounds:739,6,118,88
+offsets:3,1,124,90
+Bonus/Yard_Active
+bounds:1201,150,118,95
+offsets:3,1,124,97
+Bonus/Yard_Completed
+bounds:859,6,118,88
+offsets:3,1,124,90
+Bonus/txt x25
+bounds:1262,626,118,55
+offsets:1,1,120,57
+rotate:90
+Bonus/x25 reel
+bounds:739,96,245,111
+Bonus/x25 reelBorder
+bounds:1223,746,241,109
+offsets:2,1,245,111
+rotate:90
+Bonus/x25 reelRed
+bounds:1041,247,241,109
+offsets:2,1,245,111
+FX/FX blur dot02
+bounds:0,207,502,502
+FX/FX blur roundwake
+bounds:0,711,850,621
+FX/FX sparks
+bounds:1041,556,219,188
+offsets:4,3,226,194
+FX/FX-sparks03_orange
+bounds:504,209,491,500
+offsets:2,0,500,500
+FX/FX_Vertical_1_side_stripB
+bounds:0,4,201,737
+offsets:6,1,213,895
+rotate:90
+FX/FX_X_Form
+bounds:1041,358,197,196
+offsets:2,3,201,202
+FX/FX_Xx_reel_yellow
+bounds:852,746,369,241
+offsets:5,5,379,250
+FX/FX_sparks03_yellow
+bounds:852,989,404,343
+offsets:3,2,410,347
+FX/FX_strip
+bounds:997,253,491,42
+offsets:6,3,503,48
+rotate:90

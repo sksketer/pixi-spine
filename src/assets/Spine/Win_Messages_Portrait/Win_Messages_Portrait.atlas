@@ -1,0 +1,339 @@
+Win_Messages_Portrait.png
+size:2047,2005
+filter:Linear,Linear
+scale:0.5
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_10
+bounds:1644,406,364,290
+offsets:74,3,498,337
+FX/Coin Shower/Coin-coin_flip_01
+bounds:1830,1472,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_02
+bounds:1830,1472,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_03
+bounds:152,1781,75,148
+offsets:35,1,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_04
+bounds:1762,1938,39,146
+offsets:53,2,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_05
+bounds:2,1783,73,148
+offsets:36,1,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_06
+bounds:2,1783,73,148
+offsets:36,1,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_07
+bounds:1680,1482,135,148
+offsets:5,1,145,150
+rotate:90
+FX/Coin Shower/Coin-coin_flip_08
+bounds:1680,1482,135,148
+offsets:5,1,145,150
+rotate:90
+FX/FX blur dot01
+bounds:1891,1746,97,97
+FX/FX blur dot02
+bounds:2,603,251,251
+FX/FX sparks
+bounds:954,1733,113,97
+FX/FX_Rectangle glow
+bounds:1100,1809,137,70
+FX/FX_Vertical_1_side_stripB
+bounds:1230,1510,107,448
+rotate:90
+FX/FX_sparks03
+bounds:1630,1296,205,174
+FX/FX_strip
+bounds:1508,1961,252,24
+FX/halo
+bounds:1093,1367,141,251
+rotate:90
+Win_Message/BonusTrigger/05b_BG_Blue_Color
+bounds:2,1101,221,538
+rotate:90
+Win_Message/BonusTrigger/05b_UI_TextBox_Bonus_Games_Orange
+bounds:2,1480,638,111
+offsets:3,3,644,117
+Win_Message/BonusTrigger/05b_UI_TextBox_Click_Anywhere_White
+bounds:575,1832,523,47
+Win_Message/BonusTrigger/05b_dot_slider
+bounds:1884,1979,24,24
+Win_Message/BonusTrigger/05b_dots_grey slider
+bounds:1815,1986,67,17
+Win_Message/BonusTrigger/Bonus-Trigger_03_Popup
+bounds:2,158,608,225
+Win_Message/FreeSpins_Complete/FSC purple banner border
+bounds:953,501,689,195
+Win_Message/FreeSpins_Complete/FSC purple banner01
+bounds:2,385,689,195
+Win_Message/FreeSpins_Complete/YOU WON WAKE01
+bounds:2,1993,320,10
+offsets:0,0,353,10
+Win_Message/Superb/SW_Line_Yellow2
+bounds:2,1993,320,10
+offsets:0,0,353,10
+Win_Message/FreeSpins_Complete/YOU WON WAKE02
+bounds:968,1992,320,11
+offsets:33,0,353,11
+Win_Message/FreeSpins_Complete/money banner
+bounds:2,1681,654,86
+Win_Message/FreeSpins_Complete/money banner halo
+bounds:1069,1721,654,86
+Win_Message/Jackpot/02c_FX circle bright
+bounds:1951,1845,94,93
+offsets:0,1,95,95
+Win_Message/Jackpot/02c_FX circle brightB
+bounds:1642,1881,79,78
+offsets:0,0,79,79
+Win_Message/Jackpot/02c_FX circle sparkle
+bounds:1937,1940,64,63
+offsets:4,4,72,71
+Win_Message/Jackpot/02c_HYellow_Line1
+bounds:1239,1809,650,61
+offsets:0,0,651,61
+Win_Message/Jackpot/02c_HYellow_Line2
+bounds:1290,1987,523,16
+offsets:52,0,575,16
+Win_Message/Jackpot/02c_HYellow_Line3
+bounds:481,1955,522,17
+offsets:53,0,575,17
+Win_Message/Jackpot/02c_Jackpot_Banner
+bounds:255,582,696,194
+Win_Message/Legendary/09e_Golden_Banner
+bounds:1155,2,796,200
+Win_Message/Legendary/09e_Golden_Banner Blurred
+bounds:1308,204,671,200
+offsets:4,0,766,200
+Win_Message/Legendary/09e_HYellow_Line1
+bounds:1005,1942,522,17
+offsets:0,0,575,17
+Win_Message/Legendary/09e_HYellow_Line2
+bounds:2,1936,522,17
+offsets:0,0,575,17
+Win_Message/Legendary/09e_HYellow_Line3
+bounds:302,1769,650,61
+offsets:0,0,651,61
+Win_Message/Legendary/09e_HYellow_Line4
+bounds:2,1975,523,16
+offsets:52,0,575,16
+Win_Message/Legendary/09e_HYellow_Line5
+bounds:526,1923,522,17
+offsets:53,0,575,17
+Win_Message/Legendary/09e_ObliqueT_Line1
+bounds:612,70,231,541
+rotate:90
+Win_Message/Legendary/09e_Oblique_Line3
+bounds:1346,1365,143,282
+rotate:90
+Win_Message/Legendary/09e_txt_LEGENDARY WIN FX
+bounds:693,303,613,196
+Win_Message/Legendary/LEGENDARY Win Blurred
+bounds:2,1324,604,154
+offsets:3,0,620,154
+Win_Message/MONEY banner
+bounds:2,1593,654,86
+Win_Message/MONEY banner Inner Shadow
+bounds:914,1633,654,86
+Win_Message/Nice/NICE WIN banner Inner Shadow
+bounds:658,1532,570,99
+Win_Message/Nice/NICE WIN banner2
+bounds:542,964,734,184
+Win_Message/Nice/line bottom
+bounds:527,1974,500,16
+offsets:75,0,575,16
+Win_Message/Nice/line middle
+bounds:1050,1923,522,17
+offsets:0,0,575,17
+Win_Message/Nice/line top
+bounds:526,1904,575,17
+offsets:0,0,576,17
+Win_Message/Nice/oblique lines
+bounds:2,856,243,530
+rotate:90
+Win_Message/Sensational/09d_HYellow_Line1
+bounds:2,1917,522,17
+offsets:0,0,575,17
+Win_Message/Sensational/09d_HYellow_Line2
+bounds:324,1993,320,10
+offsets:0,0,353,10
+Win_Message/Sensational/09d_HYellow_Line3
+bounds:526,1881,541,21
+offsets:0,0,594,21
+Win_Message/Sensational/09d_HYellow_Line4
+bounds:1069,1881,571,21
+offsets:25,0,596,21
+Win_Message/Sensational/09d_HYellow_Line5
+bounds:2,1858,571,21
+offsets:25,0,596,21
+Win_Message/Sensational/09d_HYellow_Line6
+bounds:646,1993,320,10
+offsets:33,0,353,10
+Win_Message/Sensational/09d_Oblique_Line1
+bounds:658,1642,125,254
+rotate:90
+Win_Message/Sensational/09d_Oblique_Line3
+bounds:608,1182,207,440
+rotate:90
+Win_Message/Sensational/09d_Oblique_Line4
+bounds:1725,1720,87,159
+rotate:90
+Win_Message/Sensational/09d_Orange_Banner
+bounds:1278,884,734,184
+Win_Message/Sensational/09d_Orange_Banner_Blurred
+bounds:1270,698,765,184
+offsets:3,0,768,184
+Win_Message/Sensational/09d_txt_SENSAT_WIN_Blurred
+bounds:642,1391,449,139
+offsets:3,0,487,140
+Win_Message/Superb/09c_Oblique_Line1
+bounds:1050,1150,213,471
+rotate:90
+Win_Message/Superb/09c_Oblique_Line2
+bounds:1523,1070,224,483
+rotate:90
+Win_Message/Superb/09c_Purple Banner Blurred
+bounds:1570,1619,426,99
+offsets:5,0,432,99
+Win_Message/Superb/09c_Purple Banner2
+bounds:534,778,734,184
+Win_Message/Superb/09c_txt SUPERB  Blurred
+bounds:1723,1872,226,64
+offsets:2,0,252,65
+Win_Message/Superb/SW_Line_Yellow1
+bounds:1103,1904,522,17
+offsets:0,0,575,17
+Win_Message/Superb/SW_Line_Yellow3
+bounds:2,1898,522,17
+offsets:0,0,575,17
+Win_Message/Superb/SW_Line_Yellow4
+bounds:1029,1969,477,16
+offsets:98,0,575,16
+Win_Message/Superb/SW_Line_Yellow5
+bounds:2,1957,477,16
+offsets:98,0,575,16
+placeholder
+bounds:1910,1978,25,25
+
+Win_Messages_Portrait_2.png
+size:1904,1970
+filter:Linear,Linear
+scale:0.5
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_0
+bounds:530,397,486,326
+offsets:6,0,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_1
+bounds:542,69,486,326
+offsets:6,0,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_2
+bounds:1030,69,486,326
+offsets:6,0,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_3
+bounds:1504,1284,457,319
+offsets:27,0,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_4
+bounds:1548,825,457,334
+offsets:27,0,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_5
+bounds:1459,489,443,334
+offsets:39,0,498,337
+FX/FX blur wake01
+bounds:1518,62,425,311
+rotate:90
+Win_Message/BonusTrigger/05b_BG_Black_Color
+bounds:964,1407,538,334
+Win_Message/BonusTrigger/05b_BG_Divider
+bounds:2,2,363,538
+offsets:0,0,380,538
+rotate:90
+Win_Message/BonusTrigger/05b_PopUp_BGMask
+bounds:957,883,589,240
+Win_Message/BonusTrigger/05b_popup_BG
+bounds:858,630,599,251
+offsets:0,0,600,251
+Win_Message/BonusTrigger/Bonus-Trigger_02_Popup
+bounds:964,1743,833,225
+Win_Message/Jackpot/02c_Glow_Coins
+bounds:2,1427,960,541
+Win_Message/Jackpot/02c_Glow_Coins2
+bounds:2,367,526,516
+offsets:45,24,641,541
+Win_Message/Legendary/09e_ObliqueT_Line2
+bounds:858,397,231,541
+rotate:90
+Win_Message/Legendary/09e_Oblique_Line1
+bounds:957,1125,280,541
+rotate:90
+Win_Message/Legendary/BG Glow Gold
+bounds:2,885,953,540
+offsets:0,0,961,541
+
+Win_Messages_Portrait_3.png
+size:2007,1072
+filter:Linear,Linear
+scale:0.5
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_11
+bounds:910,42,364,290
+offsets:74,3,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_12
+bounds:1422,341,363,290
+offsets:75,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_13
+bounds:1642,49,363,290
+offsets:75,3,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_14
+bounds:860,706,364,290
+offsets:74,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_15
+bounds:1444,707,363,290
+offsets:75,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_16
+bounds:1130,340,364,290
+offsets:74,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_17
+bounds:1714,342,363,290
+offsets:75,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_18
+bounds:1276,48,364,290
+offsets:74,3,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_19
+bounds:1152,706,364,290
+offsets:74,3,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_6
+bounds:524,700,370,334
+offsets:72,0,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_7
+bounds:543,330,368,292
+offsets:72,2,498,337
+rotate:90
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_8
+bounds:543,36,365,292
+offsets:73,2,498,337
+Dan Video Sequences/09d/Dan Video Glitch_3-MAIN_9
+bounds:837,334,364,291
+offsets:74,2,498,337
+rotate:90
+Win_Message/BG glow
+bounds:270,60,467,271
+rotate:90
+Win_Message/BonusTrigger/05b_BG_Divider2
+bounds:2,2,266,525
+offsets:0,0,283,538
+Win_Message/Legendary/09e_Oblique_Line2
+bounds:270,529,252,541
+Win_Message/Sensational/09d_Oblique_Line2
+bounds:2,529,266,541

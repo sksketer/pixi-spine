@@ -1,0 +1,18 @@
+Symbol_Receiver_VFX.png
+size:1157,544
+filter:Linear,Linear
+FX/FX blur dot01
+bounds:958,160,184,184
+offsets:5,5,194,194
+FX/FX blur dot02
+bounds:504,90,452,452
+offsets:25,25,502,502
+FX/FX circle bright
+bounds:958,2,156,157
+offsets:1,1,159,159
+rotate:90
+FX/FX_X_Form
+bounds:958,346,197,196
+offsets:2,3,201,202
+FX/FX_spark-cardin
+bounds:2,42,500,500

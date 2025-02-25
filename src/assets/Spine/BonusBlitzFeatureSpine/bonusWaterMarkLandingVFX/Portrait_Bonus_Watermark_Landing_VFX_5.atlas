@@ -1,0 +1,23 @@
+Bonus_Watermark_Landing_VFX.png
+size:1031,244
+filter:Linear,Linear
+scale:0.5
+Bonus/Symbol_DM_FreeSpins
+bounds:936,97,55,50
+Bonus/placeholder
+bounds:936,70,25,25
+FX/FX blur dot01
+bounds:936,149,93,93
+offsets:2,2,97,97
+FX/FX blur dot02
+bounds:479,15,227,227
+offsets:12,12,251,251
+FX/FX-sparks02
+bounds:2,2,240,240
+offsets:0,0,250,250
+FX/FX_spark-cardin
+bounds:244,3,233,239
+offsets:8,3,250,250
+FX/FX_spark-ring
+bounds:708,16,226,226
+offsets:12,12,250,250

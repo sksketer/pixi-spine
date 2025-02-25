@@ -1,0 +1,18 @@
+Bonus_WinMessage_HM_Yards.png
+size:365,257
+filter:Linear,Linear
+scale:0.5
+Bonus/Color Base
+bounds:2,161,329,94
+offsets:2,2,333,98
+Bonus/HM HAIL MARY
+bounds:333,57,198,30
+rotate:90
+Bonus/HM Yellow banner
+bounds:2,74,318,85
+offsets:2,1,322,87
+Bonus/Yellow Frame
+bounds:2,2,306,70
+offsets:1,1,308,72
+Bonus/placeholder
+bounds:310,30,25,25

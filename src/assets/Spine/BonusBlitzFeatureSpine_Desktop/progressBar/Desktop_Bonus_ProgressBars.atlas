@@ -1,0 +1,23 @@
+Bonus_ProgressBars.png
+size:920,307
+filter:Linear,Linear
+scale:0.5
+Bonus/Progress Marker helmet
+bounds:2,180,57,49
+offsets:1,0,58,49
+Bonus/Progress Marker helmet glow
+bounds:61,165,73,64
+offsets:2,2,77,68
+Bonus/UI_Bonus_Meter_Progress_Bar
+bounds:2,231,916,42
+Bonus/UI_Bonus_Meter_Progress_Bar_Thin
+bounds:2,275,916,30
+FX/FX blur dot01
+bounds:136,136,93,93
+offsets:2,2,97,97
+FX/FX blur dot02
+bounds:436,2,227,227
+offsets:12,12,251,251
+FX/FX_sparks03
+bounds:231,57,203,172
+offsets:1,1,205,174

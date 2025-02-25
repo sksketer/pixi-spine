@@ -1,0 +1,14 @@
+Bonus_TotalWin_Banner.png
+size:397,59
+filter:Linear,Linear
+scale:0.5
+Bonus/TOTAL WIN
+bounds:192,2,119,18
+Bonus/Total Win Base
+bounds:2,2,188,55
+offsets:0,1,189,56
+Bonus/Total Win Tag
+bounds:192,22,176,35
+offsets:1,1,178,36
+Bonus/placeholder
+bounds:370,32,25,25

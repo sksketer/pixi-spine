@@ -1,0 +1,11 @@
+symbol_royal_K.png
+size:574,296
+filter:Linear,Linear
+Symbol_LP_K
+bounds:0,0,296,286
+offsets:3,6,304,298
+rotate:90
+Symbol_LP_K_Glow
+bounds:288,0,296,286
+offsets:3,6,304,298
+rotate:90

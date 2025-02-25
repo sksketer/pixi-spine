@@ -1,0 +1,13 @@
+dm_Bonus_ProgressBars_LS.png
+size:1832,1832
+filter:Linear,Linear
+Bonus/Progress Marker head
+bounds:0,682,114,210
+Bonus/UI_Bonus_Meter_Progress_Bar
+bounds:0,1747,1831,84
+FX/FX blur dot01
+bounds:504,1551,194,194
+FX/FX blur dot02
+bounds:0,1243,502,502
+FX/FX_sparks03
+bounds:0,894,410,347

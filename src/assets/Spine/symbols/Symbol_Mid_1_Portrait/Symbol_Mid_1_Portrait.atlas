@@ -1,0 +1,26 @@
+Symbol_Mid_1.png
+size:699,620
+filter:Linear,Linear
+scale:0.5
+FX/FX blur wake01
+bounds:2,193,425,311
+rotate:90
+Symbol_Mid_1/ball
+bounds:507,230,190,196
+Symbol_Mid_1/ball spining01
+bounds:315,428,190,196
+rotate:90
+Symbol_Mid_1/ball spining02
+bounds:315,230,190,196
+Symbol_Mid_1/ball spining03
+bounds:398,32,190,196
+Symbol_Mid_1/ovalo
+bounds:2,2,189,196
+rotate:90
+Symbol_Mid_1/shadow
+bounds:200,2,189,196
+rotate:90
+Symbol_Mid_1/smoke
+bounds:513,456,162,160
+offsets:2,0,168,165
+rotate:90
