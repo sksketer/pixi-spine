@@ -1,6 +1,7 @@
 import '../css/style.css'; 
 import { Application } from 'pixi.js';
-import SpineCreator from './SpineCreator'; // Import the SpineCreator class
+import SpineCreator from './SpineCreator';
+import './loadComplete';
 
 const app = new Application({
     width: 800,
@@ -49,3 +50,9 @@ window.addEventListener("resize", () => resizeCanvas(app));
 function resizeCanvas(app) {
     app.renderer.resize(window.innerWidth, window.innerHeight);
 }
+
+var checkbox = document.getElementById('agree');
+window.playAnimInLoop = false;
+checkbox.addEventListener('change', function() {
+    window.playAnimInLoop = checkbox.checked;
+});

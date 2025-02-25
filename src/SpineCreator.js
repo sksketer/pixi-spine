@@ -2,6 +2,7 @@
 import { BaseTexture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
 import { TextureAtlas } from '@pixi-spine/base';
+import constants from './constants';
 
 class SpineCreator {
     constructor(app) {
@@ -104,12 +105,23 @@ class SpineCreator {
             // Safely access the first animation name if it exists
             const animName = Object.keys(jsonData.animations)[0];
             if (animName) {
-                spineCharacter.state.setAnimation(0, animName, true);
+                spineCharacter.state.setAnimation(0, animName, window.playAnimInLoop);
             } else {
                 console.warn(`No animations found for ${fileName}`);
             }
 
             this.app.stage.addChild(spineCharacter);
+
+            /** Dispatch a custom event when the spine is created */
+            const event = new CustomEvent(constants.SPINE_CREATED, {
+                detail: {
+                    fileName: fileName,
+                    spineCharacter: spineCharacter,
+                    jsonData
+                }
+            });
+            window.dispatchEvent(event);
+
         } catch (error) {
             this.failedSpines.push(fileName);
             console.error(`Error loading spine asset ${fileName}:`, error);
