@@ -4,16 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spine-viewer-v2.0.0</title>
+    <title>Spine-Viewer-v2.0.0</title>
 <script defer src="bundle.js"></script></head>
 
 <body>
-    <input type="file" id="spineFileInput" multiple />
-    <div id="animSelector">
-        <select name="selectAnimations" id="selectAnimations"></select>
-        <div id="loopCheck">
-            <label for="agree">LOOP</label>
-            <input type="checkbox" id="agree" name="terms">
+    <div class="main">
+        <div class="userInteractionArea">
+            <div id="inputPannel">
+                <input type="file" id="spineFileInput" multiple />
+            </div>
+            <div id="SpineConfigPannel" class="flexRowDiv" style="display: none;">
+                <select name="selectAnimations" id="selectAnimations">
+                    <option value="Select an option">Select an option</option>
+                </select>
+                <div id="loopCheck" class="flexRowDiv">
+                    <label for="agree">LOOP</label>
+                    <input type="checkbox" id="agree" name="terms">
+                </div>
+                <div id="position" class="flexRowDiv">
+                    <label for="">Position</label>
+                    <input type="number" name="xPos" id="xPos" placeholder="x">
+                    <input type="number" name="yPos" id="yPos" placeholder="y">
+                </div>
+                <div id="scale" class="flexRowDiv">
+                    <button id="scaleInc">+</button>
+                    <label>Scale</label>
+                    <button id="scaleDec">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="canvas">
         </div>
     </div>
 </body>

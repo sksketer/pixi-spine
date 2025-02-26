@@ -1,23 +1,91 @@
+/* Base styles for the page */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
     overflow: hidden;
-    background: #222;
 }
 
-input[type="file"] {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
+/* Main container to wrap everything */
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #1099BB;
 }
 
-#animSelector {
-    display: none;
-    position: absolute;
-    padding: 25px;
+/* User Interaction Area */
+.userInteractionArea {
+    display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    margin-top: 0px;
+    flex-wrap: wrap; /* Allows wrapping when needed */
 }
-#animSelector > * {
+
+/* Input panel for file upload */
+#spineFileInput {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.flexRowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Spine Configuration Panel - Row layout */
+#SpineConfigPannel {
+    display: none;
+    width: 95%;
+    height: 30px;
+    background: grey;
+    margin: 5px auto;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Select animations */
+#selectAnimations {
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Loop checkbox */
+#loopCheck > #agree {
+    width: 30px;
+}
+
+label {
+    font-size: 16px;
     margin: 8px;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#xPos, #yPos {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+}
+
+#scaleInc, #scaleDec {
+    width: 30px;
+    height: 30px;
+    color: black;
+    background-color: #d4d4d4;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scaleInc:hover, #scaleDec:hover {
+    background-color: #ebebeb;
+    box-shadow: black 0px 0px 3px;
 }
