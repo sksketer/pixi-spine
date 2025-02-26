@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixiJS v6 + Spine</title>
-    <style>
-        body { margin: 0; overflow: hidden; background: #222; }
-        input[type="file"] { position: absolute; top: 10px; left: 10px; z-index: 10; }
-    </style>
+    <title>Spine-viewer-v2.0.0</title>
 <script defer src="bundle.js"></script></head>
+
 <body>
     <input type="file" id="spineFileInput" multiple />
+    <div id="animSelector">
+        <select name="selectAnimations" id="selectAnimations"></select>
+        <div id="loopCheck">
+            <label for="agree">LOOP</label>
+            <input type="checkbox" id="agree" name="terms">
+        </div>
+    </div>
 </body>
+
 </html>
