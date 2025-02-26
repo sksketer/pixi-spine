@@ -10,7 +10,8 @@ const app = new Application({
 });
 globalThis.__PIXI_APP__ = app;
 
-document.body.appendChild(app.view);
+const canvas = document.getElementsByClassName('canvas')[0];
+canvas.appendChild(app.view);
 resizeCanvas(app);
 
 // Initialize the SpineCreator

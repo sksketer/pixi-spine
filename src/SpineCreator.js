@@ -2,7 +2,7 @@
 import { BaseTexture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
 import { TextureAtlas } from '@pixi-spine/base';
-import constants from './constants';
+import { Constants } from './constants';
 
 class SpineCreator {
     constructor(app) {
@@ -97,7 +97,7 @@ class SpineCreator {
             const spineData = spineJsonParser.readSkeletonData(jsonData);
 
             const spineCharacter = new Spine(spineData);
-            spineCharacter.position.set(400, 300);
+            spineCharacter.position.set(this.app.screen.width/2, this.app.screen.height/2);
             spineCharacter.scale.set(0.5);
 
             this.createdSpines.push(fileName);
@@ -113,7 +113,7 @@ class SpineCreator {
             this.app.stage.addChild(spineCharacter);
 
             /** Dispatch a custom event when the spine is created */
-            const event = new CustomEvent(constants.SPINE_CREATED, {
+            const event = new CustomEvent(Constants.SPINE_CREATED, {
                 detail: {
                     fileName: fileName,
                     spineCharacter: spineCharacter,

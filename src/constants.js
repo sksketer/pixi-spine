@@ -1,5 +1,9 @@
-const constants = {
+export const Constants = {
     SPINE_CREATED: "spine_created",
 };
 
-export default constants;
+export const SpineConfigPannel = {
+    mainDiv: "SpineConfigPannel",
+};
+
+export default {};

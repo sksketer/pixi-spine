@@ -1,8 +1,8 @@
-import constants from "./constants";
+import { Constants, SpineConfigPannel } from "./constants";
 
 let fileName, spineCharacter, jsonData, animationsName;
 
-addEventListener(constants.SPINE_CREATED, function (event) {
+addEventListener(Constants.SPINE_CREATED, function (event) {
     fileName = event.detail.fileName;
     spineCharacter = event.detail.spineCharacter;
     jsonData = event.detail.jsonData;
@@ -29,10 +29,11 @@ function hideInput() {
 }
 
 function showAnimationsDropDown() {
-    const animSelectorDiv = document.getElementById('animSelector');
+    const animSelectorDiv = document.getElementById(SpineConfigPannel.mainDiv);
     animSelectorDiv.style.display = 'flex';
     
     const animSelector = document.getElementById('selectAnimations');
+    animSelector.innerHTML = '';
     animationsName = [];
     for (let animName in jsonData.animations) {
         animationsName.push(animName);
@@ -56,4 +57,34 @@ function showAnimationsDropDown() {
         console.log("Selected value: ", selectedAnim);
         spineCharacter.state.setAnimation(0, selectedAnim, window.playAnimInLoop);
     });
+
+    // Add an event listern on position property
+    const xPos = document.getElementById("xPos");
+    xPos.value = spineCharacter.x;
+    const yPos = document.getElementById("yPos");
+    yPos.value = spineCharacter.y;
+    xPos.addEventListener('input', function() {
+        const value = Number(xPos.value);
+        console.log(spineCharacter, " position x update with value ", value, ".");
+        spineCharacter.x = value;
+    });
+    yPos.addEventListener('input', function() {
+        const value = Number(yPos.value);
+        console.log(spineCharacter, " position y update with value ", value, ".");
+        spineCharacter.y = value;
+    });
+
+    // Add an event listern on scale button
+    const scaleInc = document.getElementById("scaleInc");
+    const scaleDec = document.getElementById("scaleDec");
+    scaleInc.onclick = (event) => {
+        console.log("scale increase");
+        spineCharacter.scale.x += 0.1;
+        spineCharacter.scale.y += 0.1;
+    };
+    scaleDec.onclick = (event) => {
+        console.log("scale decrease");
+        spineCharacter.scale.x -= 0.1;
+        spineCharacter.scale.y -= 0.1;
+    };
 }
