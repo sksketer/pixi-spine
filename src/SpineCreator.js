@@ -1,5 +1,5 @@
 // SpineCreator.js
-import { BaseTexture } from 'pixi.js';
+import { BaseTexture, Texture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
 import { TextureAtlas } from '@pixi-spine/base';
 import { Constants } from './constants';
@@ -19,7 +19,11 @@ class SpineCreator {
 
     readFileData(fileData) {
         return new Promise((resolve, reject) => {
-            const fileReaders = {};  // Object to store the results of file reads
+            const fileReaders = {
+                "atlas": {},
+                "json": {},
+                "image": []
+            };  // Object to store the results of file reads
 
             // Function to read each file
             const readFile = (file, type) => {
@@ -36,7 +40,7 @@ class SpineCreator {
                         reader.readAsText(file); // Read as text for atlas file
                     } else if (type === 'image') {
                         reader.onload = () => {
-                            fileReaders[type] = reader.result; // This will be a data URL
+                            fileReaders[type].push(reader.result); // This will be a data URL
                             resolve(reader.result); // Resolve the data URL
                         };
                         reader.onerror = (error) => reject(error);
@@ -56,7 +60,11 @@ class SpineCreator {
             const filePromises = [];
             if (fileData['json']) filePromises.push(readFile(fileData['json'], 'json'));
             if (fileData['atlas']) filePromises.push(readFile(fileData['atlas'], 'atlas'));
-            if (fileData['image']) filePromises.push(readFile(fileData['image'], 'image'));
+            if (fileData['image']) {
+                fileData['image'].forEach((file) => {
+                    filePromises.push(readFile(file, 'image'));
+                });
+            }
 
             Promise.all(filePromises).then(() => {
                 resolve(fileReaders);
@@ -88,16 +96,48 @@ class SpineCreator {
             // Create the TextureAtlas with a valid URL for the image
             const spineAtlas = new TextureAtlas(resources['atlas'], (line, callback) => {
                 // Create a temporary URL for the image and pass it to BaseTexture.from()
-                const imageUrl = resources['image'];
-                callback(BaseTexture.from(imageUrl)); // Use data URL here
+                const textures = resources['image'].map((imageUrl) => {
+                    // Create a BaseTexture and then a Texture from each image URL
+                    const baseTexture = BaseTexture.from(imageUrl);
+                    return new Texture(baseTexture);
+                });
+
+                function createCombinedTexture(image1, image2) {
+                    // Create a canvas to combine both images
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+
+                    // Set the canvas size to fit both images
+                    canvas.width = image1.width + image2.width;
+                    canvas.height = Math.max(image1.height, image2.height);
+
+                    // Draw the images onto the canvas
+                    context.drawImage(image1.baseTexture.resource.source, 0, 0);
+                    context.drawImage(image2.baseTexture.resource.source, image1.width, 0);
+
+                    // Create a new texture from the combined canvas
+                    const combinedTexture = Texture.from(canvas);
+
+                    // Destroy the canvas after creating the texture
+                    canvas.width = 0;
+                    canvas.height = 0;
+
+                    // Return the combined texture
+                    return combinedTexture;
+                }
+
+                // Combine the textures and use it in a sprite
+                const combinedTexture = createCombinedTexture(textures[0], textures[1]);
+                callback(BaseTexture.from(combinedTexture.baseTexture)); // Use data URL here
             });
+            return;
 
             const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
             const spineJsonParser = new SkeletonJson(spineAtlasLoader);
             const spineData = spineJsonParser.readSkeletonData(jsonData);
 
             const spineCharacter = new Spine(spineData);
-            spineCharacter.position.set(this.app.screen.width/2, this.app.screen.height/2);
+            spineCharacter.position.set(this.app.screen.width / 2, this.app.screen.height / 2);
             spineCharacter.scale.set(0.5);
 
             this.createdSpines.push(fileName);

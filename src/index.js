@@ -32,7 +32,11 @@ fileInput.addEventListener('change', async (event) => {
 
 // Helper function to read files
 async function readFiles(files) {
-    const fileData = {};
+    const fileData = {
+        "atlas": {},
+        "json": {},
+        "image": []
+    };
     for (let file of files) {
         const fileName = file.name.toLowerCase();
         if (fileName.endsWith('.json')) {
@@ -40,7 +44,7 @@ async function readFiles(files) {
         } else if (fileName.endsWith('.atlas')) {
             fileData['atlas'] = file;  // Directly store the file object
         } else if (fileName.endsWith('.png')) {
-            fileData['image'] = file;  // Directly store the file object
+            fileData['image'].push(file);  // Directly store the file object
         }
     }
     return fileData;
