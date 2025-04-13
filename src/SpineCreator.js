@@ -1,5 +1,5 @@
 // SpineCreator.js
-import { BaseTexture, Texture } from 'pixi.js';
+import { BaseTexture, Container, Texture } from 'pixi.js';
 import { Spine, AtlasAttachmentLoader, SkeletonJson } from '@pixi-spine/runtime-4.1';
 import { TextureAtlas } from '@pixi-spine/base';
 import { Constants } from './constants';
@@ -95,42 +95,9 @@ class SpineCreator {
 
             // Create the TextureAtlas with a valid URL for the image
             const spineAtlas = new TextureAtlas(resources['atlas'], (line, callback) => {
-                // Create a temporary URL for the image and pass it to BaseTexture.from()
-                const textures = resources['image'].map((imageUrl) => {
-                    // Create a BaseTexture and then a Texture from each image URL
-                    const baseTexture = BaseTexture.from(imageUrl);
-                    return new Texture(baseTexture);
-                });
-
-                function createCombinedTexture(image1, image2) {
-                    // Create a canvas to combine both images
-                    const canvas = document.createElement('canvas');
-                    const context = canvas.getContext('2d');
-
-                    // Set the canvas size to fit both images
-                    canvas.width = image1.width + image2.width;
-                    canvas.height = Math.max(image1.height, image2.height);
-
-                    // Draw the images onto the canvas
-                    context.drawImage(image1.baseTexture.resource.source, 0, 0);
-                    context.drawImage(image2.baseTexture.resource.source, image1.width, 0);
-
-                    // Create a new texture from the combined canvas
-                    const combinedTexture = Texture.from(canvas);
-
-                    // Destroy the canvas after creating the texture
-                    canvas.width = 0;
-                    canvas.height = 0;
-
-                    // Return the combined texture
-                    return combinedTexture;
-                }
-
-                // Combine the textures and use it in a sprite
-                const combinedTexture = createCombinedTexture(textures[0], textures[1]);
-                callback(BaseTexture.from(combinedTexture.baseTexture)); // Use data URL here
+                const imageUrl = resources['image'];
+                callback(BaseTexture.from(imageUrl[0])); // Use data URL here
             });
-            return;
 
             const spineAtlasLoader = new AtlasAttachmentLoader(spineAtlas);
             const spineJsonParser = new SkeletonJson(spineAtlasLoader);
@@ -150,7 +117,11 @@ class SpineCreator {
                 console.warn(`No animations found for ${fileName}`);
             }
 
-            this.app.stage.addChild(spineCharacter);
+            // this.app.stage.addChild(spineCharacter);
+
+            const sceenContainer = new Container();
+            this.app.stage.addChild(sceenContainer);
+            sceenContainer.addChild(spineCharacter);
 
             /** Dispatch a custom event when the spine is created */
             const event = new CustomEvent(Constants.SPINE_CREATED, {

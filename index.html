@@ -14,9 +14,12 @@
                 <input type="file" id="spineFileInput" multiple />
             </div>
             <div id="SpineConfigPannel" class="flexRowDiv" style="display: none;">
-                <select name="selectAnimations" id="selectAnimations">
-                    <option value="Select an option">Select an option</option>
-                </select>
+                <div id="userSelect">
+                    <button id="loadNew">🔄</button>
+                    <select name="selectAnimations" id="selectAnimations">
+                        <option value="Select an option">Select an option</option>
+                    </select>
+                </div>
                 <div id="loopCheck" class="flexRowDiv">
                     <label for="agree">LOOP</label>
                     <input type="checkbox" id="agree" name="terms">

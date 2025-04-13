@@ -20,13 +20,30 @@ const spineCreator = new SpineCreator(app);
 const fileInput = document.getElementById('spineFileInput');
 
 fileInput.addEventListener('change', async (event) => {
-    const files = event.target.files;
-    if (files.length >= 3) { // We need at least 3 files (JSON, Atlas, PNG)
+    try {
+        const files = event.target.files;
+        if (files.length < 3) {
+            throw new Error("Please upload at least 3 files: JSON, Atlas, and Image.");
+        }
+
         const fileData = await readFiles(files);
-        const fileName = files[0].name.split('.')[0]; // We can use the file name without extension
+
+        // Validate that all required files are present
+        const missingFiles = Object.entries(fileData)
+            .filter(([_, value]) => value === null)
+            .map(([key]) => key);
+
+        if (missingFiles.length > 0) {
+            throw new Error(`Missing required file: ${missingFiles.join(', ')}`);
+        }
+
+        // Extract the base name without extension
+        const fileName = Object.values(fileData)
+            .find(file => file !== null)?.name.split('.').slice(0, -1).join('.');
+
         await spineCreator.createSpine(fileName, fileData);
-    } else {
-        alert("Please upload at least 3 files: JSON, Atlas, and PNG.");
+    } catch (error) {
+        alert(error.message);
     }
 });
 
@@ -43,10 +60,11 @@ async function readFiles(files) {
             fileData['json'] = file;  // Directly store the file object
         } else if (fileName.endsWith('.atlas')) {
             fileData['atlas'] = file;  // Directly store the file object
-        } else if (fileName.endsWith('.png')) {
+        } else if (file.type.startsWith('image/')) {
             fileData['image'].push(file);  // Directly store the file object
         }
     }
+    window.fd = fileData;
     return fileData;
 }
 

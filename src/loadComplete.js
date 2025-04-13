@@ -1,10 +1,11 @@
 import { Constants, SpineConfigPannel } from "./constants";
 
 let fileName, spineCharacter, jsonData, animationsName;
+let loadedSpine;
 
 addEventListener(Constants.SPINE_CREATED, function (event) {
     fileName = event.detail.fileName;
-    spineCharacter = event.detail.spineCharacter;
+    loadedSpine = spineCharacter = event.detail.spineCharacter;
     jsonData = event.detail.jsonData;
 
     // Perform any task here with the created spine
@@ -29,6 +30,7 @@ function hideInput() {
 }
 
 function showAnimationsDropDown() {
+    const spineFileInput = document.getElementById('spineFileInput');
     const animSelectorDiv = document.getElementById(SpineConfigPannel.mainDiv);
     animSelectorDiv.style.display = 'flex';
     
@@ -42,7 +44,7 @@ function showAnimationsDropDown() {
         option.textContent = animName;
         animSelector.appendChild(option);
     }
-
+    
     // Optionally, add a default placeholder option
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
@@ -50,7 +52,7 @@ function showAnimationsDropDown() {
     defaultOption.disabled = true;
     defaultOption.selected = true;
     animSelector.insertBefore(defaultOption, animSelector.firstChild);
-
+    
     // Add an event listener to the select element to capture changes
     animSelector.addEventListener('change', (event) => {
         const selectedAnim = event.target.value;
@@ -73,7 +75,7 @@ function showAnimationsDropDown() {
         console.log(spineCharacter, " position y update with value ", value, ".");
         spineCharacter.y = value;
     });
-
+    
     // Add an event listern on scale button
     const scaleInc = document.getElementById("scaleInc");
     const scaleDec = document.getElementById("scaleDec");
@@ -87,4 +89,21 @@ function showAnimationsDropDown() {
         spineCharacter.scale.x -= 0.1;
         spineCharacter.scale.y -= 0.1;
     };
+    
+    // Load new spine
+    const loadButton = document.getElementById('loadNew');
+    loadButton.addEventListener('click', () => {
+        const spineFileInput = document.getElementById('spineFileInput');
+        const animSelectorDiv = document.getElementById(SpineConfigPannel.mainDiv);
+
+        spineFileInput.value = '';
+        spineFileInput.style.display = 'block';
+        animSelectorDiv.style.display = 'none';
+
+        const spineParent = loadedSpine.parent;
+        loadedSpine.parent = null;
+        loadedSpine.destroy();
+        spineParent.destroy();
+        
+    });
 }
